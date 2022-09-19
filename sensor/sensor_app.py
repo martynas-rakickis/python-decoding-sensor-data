@@ -1,4 +1,5 @@
 # Runner script for all modules
+from load_data import load_sensor_data
 from house_info import HouseInfo
 from datetime import date, datetime
 ##############################
@@ -9,7 +10,6 @@ print("Sensor Data App")
 ##############################
 
 # Module 1 code here:
-from load_data import load_sensor_data
 data = load_sensor_data()
 print("Loaded records: {}".format(len(data)))
 # Module 2 code here:
